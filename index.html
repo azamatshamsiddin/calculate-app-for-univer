@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Calculate App</title>
+  </head>
+  <body>
+    <main class="main">
+      <section class="values">
+        <h2>Qiymatlar</h2>
+        <form class="form">
+          <label for="voltage-supply"
+            ><span>U<sub>man</sub></span>
+            <input
+              required
+              type="text"
+              class="voltage-supply"
+              id="voltage-supply"
+            />
+          </label>
+
+          <label for="resistance-supply"
+            ><span>R<sub>man</sub></span>
+            <input
+              required
+              type="text"
+              class="resistance-supply"
+              id="resistance-supply"
+            />
+          </label>
+
+          <label for="resistance-load"
+            ><span>R<sub>yuk</sub></span>
+            <input
+              required
+              type="text"
+              class="resistance-load"
+              id="resistance-load"
+            />
+          </label>
+
+          <label for="power-output"
+            ><span>P<sub>chiq=yuk</sub></span>
+            <input
+              required
+              type="text"
+              class="power-output"
+              id="power-output"
+            />
+          </label>
+          <div class="btn-wrapper">
+            <button class="btn btn-result">Natija</button>
+            <button class="btn btn-reset">Tozalash</button>
+          </div>
+        </form>
+      </section>
+      <section class="result">
+        <h2>Natijalar</h2>
+        <ol class="list">
+          <li>P<sub>man</sub> = ? Wt</li>
+          <li>K<sub>p</sub> = ?</li>
+          <li>I<sub>yuk</sub> = ? A</li>
+          <li>U<sub>yuk</sub> = ? V</li>
+        </ol>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
